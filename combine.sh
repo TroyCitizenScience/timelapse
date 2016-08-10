@@ -6,6 +6,6 @@
 
 #you can run this script manually or do it as a cronjob if you want
 
-#command below is filler until i customize it
-convert *.png[400x400] -splice 0x10 -background "#ffffff"  -append  -crop -0+10 output.png
-#to finish the job, go to the info at http://gotofritz.net/blog/geekery/combining-images-imagemagick/
+convert ./timelapse/*.jpeg  -set delay 10 output.gif
+
+#for explanation on how to modify this to suit your own needs, to go http://gotofritz.net/blog/geekery/combining-images-imagemagick/
