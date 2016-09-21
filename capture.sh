@@ -8,7 +8,6 @@
 
 #you might want to just try running this script from the command line to make sure everything works
 
-declare -i count=0
-count=$(ls ./timelapse | wc -w)
-streamer -c /dev/video0 -b 16 -o ./timelapse/picture$count.jpeg
-echo picture$count.jpeg
+name=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+streamer -c /dev/video0 -b 16 -o ./timelapse/$name.jpeg
+echo $name.jpeg
