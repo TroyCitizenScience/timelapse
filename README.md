@@ -1,11 +1,13 @@
+# DIY Timelapse Photobooth
+
 Here are scripts for running a timelapse photobooth station based on some Unix machine; probably a Raspberry Pi.
 
 Have Fun!
 
-Also, if you're super-skilled with crontab you can go ahead and do that, but if you don't really know what I'm talking about but are running a Raspberry Pi with the default Raspbian OS, then I recommend you do the following:
+## Companion software that you should install:
 
-sudo apt-get install gnome-schedule
-
-This give you a nice tool for managing cronjobs without having to do all the manual crontab editing.
+- [Gnome Schedule](https://wiki.gnome.org/Schedule) - A graphical fronend for crontab editing. Run sudo apt-get install gnome-schedule.
+- [Streamer](https://linux.die.net/man/1/streamer) - A CLI command for capturing video. Run sudo apt-get install streamer.
+- [ImageMagick](http://imagemagick.org/script/index.php) - This package provides the "convert" CLI utility for combining your captured images into video.  Run sudo apt-get install imagemagick.
 
 Written by Dylan Rees
